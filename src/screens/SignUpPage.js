@@ -31,21 +31,21 @@ const SignUpPage = ({ navigation }) => {
         <CustomTextInput
           title="Name"
           isSecureText={false}
-          handlePlaceholder="Enter your name"
+          handlePlaceholder="Enter your name (random name)"
           handleOnChangeText={(val) => dispatch(setName(val))}
           handleValue={name}
         />
         <CustomTextInput
           title="Email"
           isSecureText={false}
-          handlePlaceholder="Enter your email"
+          handlePlaceholder="Enter your email (test@test.com)"
           handleOnChangeText={(val) => dispatch(setEmail(val))}
           handleValue={email}
         />
         <CustomTextInput
           title="Password"
           isSecureText={true}
-          handlePlaceholder="Enter your password"
+          handlePlaceholder="Enter your password (123456)"
           handleOnChangeText={(val) => dispatch(setPassword(val))}
           handleValue={password}
         />
@@ -53,7 +53,12 @@ const SignUpPage = ({ navigation }) => {
       <View style={styles.signUpOptions}>
         <CustomButton
           buttonText="Sign Up"
-          handleOnPress={() => dispatch(setIsLoading(true))}
+          handleOnPress={() =>
+            setTimeout(() => {
+              dispatch(setIsLoading(false));
+              navigation.navigate("LoginPage");
+            }, 3000)
+          }
           setwidth="50%"
           buttonColor="#007bff"
           pressedButtonColor="#0056b3"
