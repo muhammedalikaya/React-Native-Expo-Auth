@@ -11,6 +11,8 @@ This project is a React Native application built with Expo for authentication pu
 - [ ] Context API
 - [ ] React Navigation
 - [ ] Authentication Flow with JWT
+- [ ] Navigation between screens (in accordance with the file structure architecture)
+- [ ] Creating reusable structures with props and components
 
 ## Version Log
 
