@@ -1,6 +1,6 @@
 # React Native Expo Auth App
 
-This project is for learning purposes and aims to understand the architectural structure and dependencies in the simplest and most straightforward manner. 
+This project is for learning purposes and aims to understand the architectural structure and dependencies in the simplest and most straightforward manner.
 
 This project is a React Native application built with Expo for authentication purposes. The app includes features such as login and sign-up functionality.
 
@@ -10,15 +10,19 @@ This project is a React Native application built with Expo for authentication pu
 - [ ] Redux for State Management
 - [ ] Context API
 - [ ] React Navigation
-- [ ] Authentication Flow with JWT
+- [ ] Firebase Authentication
 - [ ] Navigation between screens (in accordance with the file structure architecture)
 - [ ] Creating reusable structures with props and components
 
 ## Version Log
 
-### v1.0.0
+### v0.0.1
 
 - Initial version with basic login and sign-up pages.
+
+### v0.0.2
+
+- Fake login removed and Firebase Auth injected with Redux-Thunk.
 
 ---
 
